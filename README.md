@@ -44,7 +44,7 @@ We utilizes industry best-practices with feature branch workflow via Github Flow
 The following links provide enhanced awareness throughout the App Agile process:
 * [Branch Status](https://github.com/NNaidoo/rescue-poc/branches)
 * [Pull Request Status](https://github.com/NNaidoo/rescue-poc/pulls)
-* [TravisCI Status](https://travis-ci.org/rescue-poc)
+* [TravisCI Status](https://travis-ci.org/NNaidoo/rescue-poc)
 
 
 #### Merging from Master
@@ -66,8 +66,8 @@ Staying up-to-date with the latest from `master` is beneficial to parallel devel
 
 #### Merging to Master
 * Make sure your feature branch is not behind master. This may be viewed from the [Branch Status](https://github.com/NNaidoo/rescue-poc/branches) view in the Behind/Ahead column.
-* Verify that your feature branch builds successfully on [TravisCI Status](https://travis-ci.org/rescue-poc).
-* Check your coverage against master (also available on [TravisCI Status](https://travis-ci.org/rescue-poc). Make sure the coverage in your feature branch is greater than or equal to the coverage in master.
+* Verify that your feature branch builds successfully on [TravisCI Status](https://travis-ci.org/NNaidoo/rescue-poc).
+* Check your coverage against master (also available on [TravisCI Status](https://travis-ci.org/NNaidoo/rescue-poc). Make sure the coverage in your feature branch is greater than or equal to the coverage in master.
 * Resolve or reply to all Pull Request comments.
 * Use the Merge button on the Pull Request to merge back to master.
 * Once the test is successful and no further changes needed for sign off delete the original feature branch.
