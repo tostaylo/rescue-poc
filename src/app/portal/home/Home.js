@@ -11,12 +11,15 @@ const Home = () => (
       </h1>
       <div>
         <Link to={'help'}>
-          <Button label={<FormattedMessage id={'label.getHelp'} />} />
+          <Button raised label={<FormattedMessage id={'label.getHelp'} />} />
         </Link>
       </div>
       <div>
         <Link to={'respond'}>
-          <Button label={<FormattedMessage id={'label.provideHelp'} />} />
+          <Button
+            raised
+            label={<FormattedMessage id={'label.provideHelp'} />}
+          />
         </Link>
       </div>
     </div>

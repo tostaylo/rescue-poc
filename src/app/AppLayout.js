@@ -20,6 +20,7 @@ const AppLayout = props => {
 
   const portalDrawerNav = [
     { to: '/', id: <FormattedMessage id={'app.nav.home'} /> },
+    { to: 'help', id: <FormattedMessage id={'app.nav.help'} /> },
     { to: 'contact', id: <FormattedMessage id={'app.nav.contact'} /> },
     { to: 'login', id: <FormattedMessage id={'app.nav.login'} /> },
     { to: 'dashboard', id: <FormattedMessage id={'app.nav.dashboard'} /> },
