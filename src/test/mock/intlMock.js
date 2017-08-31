@@ -5,6 +5,7 @@ export default {
 
     // Portal Navigation
     'app.nav.contact': 'Contact',
+    'app.nav.help': 'Help',
     'app.nav.home': 'Home',
     'app.nav.login': 'Login',
     'app.nav.privacy': 'Privacy',
@@ -26,6 +27,9 @@ export default {
     'form.required': 'Required',
     'form.reset': 'Reset',
     'form.submit': 'Submit',
+
+    // Help Form
+    'helpForm.email': 'Email',
 
     // Contact Form
     'contactForm.email': 'Email',
