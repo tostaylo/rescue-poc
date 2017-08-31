@@ -9,6 +9,7 @@ export default {
     'app.nav.home': 'Home',
     'app.nav.login': 'Login',
     'app.nav.privacy': 'Privacy',
+    'app.nav.respond': 'Respond',
     'app.nav.terms': 'Terms',
     'app.nav.user': 'User Profile',
 

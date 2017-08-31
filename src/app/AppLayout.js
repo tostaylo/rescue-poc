@@ -24,7 +24,8 @@ const AppLayout = props => {
     { to: 'contact', id: <FormattedMessage id={'app.nav.contact'} /> },
     { to: 'login', id: <FormattedMessage id={'app.nav.login'} /> },
     { to: 'dashboard', id: <FormattedMessage id={'app.nav.dashboard'} /> },
-    { to: '/dashboard/users', id: <FormattedMessage id={'app.nav.users'} /> }
+    { to: '/dashboard/users', id: <FormattedMessage id={'app.nav.users'} /> },
+    { to: 'respond', id: <FormattedMessage id={'app.nav.respond'} /> }
   ].map(item => (
     <Link to={item.to} key={item.to} onClick={closeDrawer}>
       {' '}

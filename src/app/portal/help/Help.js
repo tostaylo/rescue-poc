@@ -22,7 +22,7 @@ const validate = values => {
 };
 
 const helpForm = ({ handleSubmit, pristine, reset, submitting }) => (
-  <div className="login">
+  <div className="help">
     <div className="portal-content">
       <h1>
         <FormattedMessage id={'app.nav.help'} />
