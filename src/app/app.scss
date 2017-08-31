@@ -1,0 +1,56 @@
+html, html a {
+  -webkit-font-smoothing : antialiased;
+  text-shadow : 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+  font-size: 100%;
+}
+
+.portal-content {
+  z-index: 0;
+  padding: 1em 1.5em;
+  height: calc(100vh - 13em);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dashboard-content {
+  z-index: 0;
+  padding: 1em 1.5em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mdl-layout__header {
+  background-color: #424242;
+}
+
+.mdl-layout__header-row {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.mdl-mini-footer {
+  z-index: 3;
+  padding: 1em 3em 1em 1.5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.users {
+  .mdl-button {
+    margin: 2em 0 0 0;
+  }
+}
+
+.contact, .login {
+  .mdl-button {
+    min-width: 8em;
+    margin-right: 2em;
+  }
+}

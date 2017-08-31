@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rescue POC</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/asset/img/app.ico" />
+  <link rel="stylesheet" href="/asset/vendor/material-icons.css" />
+  <link rel="stylesheet" href="/asset/vendor/font-awesome.min.css" />
+</head>
+
+<body>
+  <div id="view"></div>
+  <script src="/bundle.js"></script>
+</body>
+
+<!--
+    Sadly IE needs this to support redirecting for routing purposes...
+    512 bytes of padding to suppress Internet Explorer's "Friendly error messages"
+
+    From: HOW TO: Turn Off the Internet Explorer 5.x and 6.x "Show Friendly HTTP Error Messages" Feature on the Server Side
+          http://support.microsoft.com/kb/294807
+
+    Several frequently-seen status codes have "friendly" error messages
+    that Internet Explorer 5.x displays and that effectively mask the
+    actual text message that the server sends.
+    However, these \"friendly\" error messages are only displayed if the
+    response that is sent to the client is less than or equal to a
+    specified threshold.
+    For example, to see the exact text of an HTTP 500 response,
+    the content length must be greater than 512 bytes.
+  -->
+</html>

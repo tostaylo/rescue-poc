@@ -1,0 +1,24 @@
+{
+  "presets":[
+      "es2015", "stage-0", "react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "dist": "./dist",
+          "app": "./src/app",
+          "app/test": "./src/test"
+        }
+      }
+    ],
+    [
+      "react-intl", {
+        "messagesDir": "./src/test/mock",
+        "enforceDescriptions": false
+      }
+    ]
+  ]
+}

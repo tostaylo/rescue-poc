@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6"
+  },
+  "exclude": [
+    "bower_components"
+    "dist"
+    "node_modules",
+    "node",
+  ]
+}
