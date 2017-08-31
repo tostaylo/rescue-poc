@@ -15,6 +15,10 @@ export default {
     'app.nav.dashboard': 'Dashboard',
     'app.nav.users': 'Users',
 
+    // Labels
+    'label.getHelp': 'Get Help',
+    'label.provideHelp': 'Provide Help',
+
     // Forms
     'form.add': 'Add',
     'form.invalidEmail': 'Invalid Email',
