@@ -4,7 +4,15 @@ import 'react-mdl/extra/material';
 import 'react-mdl/extra/css/material.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import { Contact, Help, Home, Login, Privacy, Terms } from 'app/portal';
+import {
+  Contact,
+  Help,
+  Home,
+  Login,
+  Respond,
+  Privacy,
+  Terms
+} from 'app/portal';
 import { Dashboard, DashboardLayout, Users } from 'app/dashboard';
 import AppLayout from './AppLayout';
 import './app.scss';
@@ -19,6 +27,7 @@ const AppRouter = () => (
         <Route path="contact" component={Contact} />
         <Route path="login" component={Login} />
         <Route path="help" component={Help} />
+        <Route path="respond" component={Respond} />
         <Route path="privacy" component={Privacy} />
         <Route path="terms" component={Terms} />
         <Route path="dashboard" component={DashboardLayout}>
