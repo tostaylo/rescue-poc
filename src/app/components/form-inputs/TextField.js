@@ -32,9 +32,9 @@ TextField.propTypes = {
   fullWidth: PropTypes.bool,
   input: inputShape.isRequired,
   label: PropTypes.element,
-  max: PropTypes.number,
   meta: metaShape.isRequired,
-  min: PropTypes.number
+  max: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  min: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 };
 
 export default TextField;

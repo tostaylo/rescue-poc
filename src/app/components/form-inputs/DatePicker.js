@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { DatePicker as MUDatePicker } from 'material-ui';
 import { inputShape } from './propTypes';
 
