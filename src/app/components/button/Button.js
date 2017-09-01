@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Button as MDLButton } from 'react-mdl';
 
 const Button = ({ raised, ripple, disabled, colored, accent, label }) => (
@@ -14,12 +15,14 @@ const Button = ({ raised, ripple, disabled, colored, accent, label }) => (
 );
 
 Button.propTypes = {
-  raised: PropTypes.boolean,
-  ripple: PropTypes.boolean,
-  disabled: PropTypes.boolean,
-  colored: PropTypes.boolean,
-  accent: PropTypes.boolean,
-  label: PropTypes.string
+  raised: PropTypes.bool,
+  ripple: PropTypes.bool,
+  disabled: PropTypes.bool,
+  colored: PropTypes.bool,
+  accent: PropTypes.bool,
+  label: PropTypes.shape({
+    label: PropTypes.string
+  })
 };
 
 export default Button;
