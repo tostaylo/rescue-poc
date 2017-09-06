@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { reduxForm } from 'redux-form';
 import { FormattedMessage } from 'react-intl';
 import { Footer } from 'app/components';
 import firebase from 'root/firebase';
@@ -37,8 +36,4 @@ class HelpForm extends Component {
   }
 }
 
-HelpForm = reduxForm({
-  form: 'HelpForm',
-})(HelpForm);
-/*eslint-enable*/
 export default HelpForm;
