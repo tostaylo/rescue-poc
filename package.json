@@ -17,12 +17,12 @@
     "lint": "eslint src --fix",
     "prebuild": "yarn && npm run lint",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules -p",
+    "depoly": "firebase deploy",
     "prestart": "yarn && npm run lint",
     "start": "cross-env NODE_ENV=development webpack-dev-server --content-base=dist --hot --inline",
     "test": "cross-env NODE_ENV=test echo \"No test specified\" && exit 1"
   },
   "dependencies": {
-    "firebase": "^4.3.0",
     "material-ui": "^0.18.1",
     "prop-types": "^15.5.10",
     "rc-table": "^5.3.3",
@@ -59,6 +59,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-prettier": "^2.0.1",
     "eslint-plugin-react": "^6.10.3",
+    "firebase": "^4.3.0",
     "node-sass": "^4.5.0",
     "path": "^0.12.7",
     "prettier": "^1.2.2",
