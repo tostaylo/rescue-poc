@@ -11,6 +11,9 @@ import {
   Navigation,
   Content
 } from 'react-mdl';
+import 'react-mdl/extra/material';
+import 'react-mdl/extra/css/material.css';
+import './app.scss';
 
 const AppLayout = props => {
   const closeDrawer = () => {

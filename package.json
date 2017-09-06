@@ -1,7 +1,8 @@
 {
   "name": "rescue-poc",
   "version": "0.0.1",
-  "description": "Proof of concept for a Victim/Responder app inspired by the devestatio of Hurricane Harvey",
+  "description":
+    "Proof of concept for a Victim/Responder app inspired by the devestatio of Hurricane Harvey",
   "license": "UNLICENSED",
   "private": true,
   "repository": {
@@ -12,13 +13,15 @@
     "url": "https://github.com/NNaidoo/rescue-poc/issues"
   },
   "homepage": "https://github.com/NNaidoo/rescue-poc/#readme",
-  "main": "./src/app/index.js",
+  "main": "./src/app/app.js",
   "scripts": {
     "lint": "eslint src --fix",
     "prebuild": "yarn && npm run lint",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules -p",
-    "prestart":"yarn && npm run lint",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --content-base=dist --hot --inline",
+    "build":
+      "cross-env NODE_ENV=production webpack --progress --hide-modules -p",
+    "prestart": "yarn && npm run lint",
+    "start":
+      "cross-env NODE_ENV=development webpack-dev-server --content-base=dist --hot --inline",
     "test": "cross-env NODE_ENV=test echo \"No test specified\" && exit 1"
   },
   "dependencies": {
