@@ -27,6 +27,7 @@ const AppLayout = props => {
     { to: 'help', id: <FormattedMessage id={'app.nav.help'} /> },
     { to: 'contact', id: <FormattedMessage id={'app.nav.contact'} /> },
     { to: 'login', id: <FormattedMessage id={'app.nav.login'} /> },
+    { to: 'signup', id: <FormattedMessage id={'app.nav.signup'} /> },
     { to: 'dashboard', id: <FormattedMessage id={'app.nav.dashboard'} /> },
     { to: '/dashboard/users', id: <FormattedMessage id={'app.nav.users'} /> },
     { to: 'respond', id: <FormattedMessage id={'app.nav.respond'} /> }
