@@ -13,7 +13,7 @@
     "url": "https://github.com/NNaidoo/rescue-poc/issues"
   },
   "homepage": "https://github.com/NNaidoo/rescue-poc/#readme",
-  "main": "./src/app/app.js",
+  "main": "./src/app/index.js",
   "scripts": {
     "lint": "eslint src --fix",
     "prebuild": "yarn && npm run lint",

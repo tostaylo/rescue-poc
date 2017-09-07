@@ -7,7 +7,7 @@ const DEBUG = process.env.NODE_ENV === 'development';
 const exec = command => execSync(command, { encoding: 'utf8' });
 const GIT_BRANCH = exec('git rev-parse --abbrev-ref HEAD');
 const GIT_COMMIT = exec('git rev-parse --short HEAD');
-const ENTRY = path.join(__dirname, './src/app/App.js');
+const ENTRY = path.join(__dirname, './src/app/index.js');
 const OUTPUT = path.join(__dirname, './dist/asset/js');
 
 const sharedPlugins = [
