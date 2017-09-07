@@ -11,16 +11,12 @@ import {
   Navigation,
   Content
 } from 'react-mdl';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import 'react-mdl/extra/material';
 import 'react-mdl/extra/css/material.css';
 import './app.scss';
 
 const AppLayout = props => {
-  injectTapEventPlugin();
-
   const closeDrawer = () => {
     const d = document.querySelector('.mdl-layout');
     d.MaterialLayout.toggleDrawer();
@@ -42,19 +38,17 @@ const AppLayout = props => {
   ));
 
   return (
-    <MuiThemeProvider>
-      <div className="app">
-        <Layout fixedHeader>
-          <Header>
-            <HeaderRow title={<Logo />} />
-          </Header>
-          <Drawer title={<Logo />}>
-            <Navigation>{portalDrawerNav}</Navigation>
-          </Drawer>
-          <Content>{props.children}</Content>
-        </Layout>
-      </div>
-    </MuiThemeProvider>
+    <div className="app">
+      <Layout fixedHeader>
+        <Header>
+          <HeaderRow title={<Logo />} />
+        </Header>
+        <Drawer title={<Logo />}>
+          <Navigation>{portalDrawerNav}</Navigation>
+        </Drawer>
+        <Content>{props.children}</Content>
+      </Layout>
+    </div>
   );
 };
 

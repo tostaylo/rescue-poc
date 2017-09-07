@@ -1,29 +1,18 @@
 import React from 'react';
-import { createStore, combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
-import { Provider, intlReducer } from 'react-intl-redux';
-import { localeData } from 'app/test/mock';
+import { Provider } from 'react-intl-redux';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import AppIntl from './AppIntl';
+import store from './AppStore';
 
-const AppStore = () => {
-  const reducer = combineReducers({
-    form: formReducer,
-    intl: intlReducer
-  });
+injectTapEventPlugin();
 
-  /* eslint-disable no-underscore-dangle */
-  const store = createStore(
-    reducer,
-    localeData,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  );
-  /* eslint-enable */
-
-  return (
+const AppStore = () => (
+  <MuiThemeProvider>
     <Provider store={store}>
       <AppIntl />
     </Provider>
-  );
-};
+  </MuiThemeProvider>
+);
 
 export default AppStore;
