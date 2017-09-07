@@ -1,7 +1,5 @@
 {
-  "presets":[
-      "es2015", "stage-0", "react"
-  ],
+  "presets": ["es2015", "stage-0", "react"],
   "plugins": [
     "react-hot-loader/babel",
     [
@@ -10,12 +8,14 @@
         "alias": {
           "dist": "./dist",
           "app": "./src/app",
-          "app/test": "./src/test"
+          "app/test": "./src/test",
+          "root": "./"
         }
       }
     ],
     [
-      "react-intl", {
+      "react-intl",
+      {
         "messagesDir": "./src/test/mock",
         "enforceDescriptions": false
       }
