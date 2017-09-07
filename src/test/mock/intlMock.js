@@ -8,6 +8,7 @@ export default {
     'app.nav.help': 'Help',
     'app.nav.home': 'Home',
     'app.nav.login': 'Login',
+    'app.nav.signup': 'Signup',
     'app.nav.privacy': 'Privacy',
     'app.nav.respond': 'Respond',
     'app.nav.terms': 'Terms',
