@@ -1,0 +1,115 @@
+Basic page-by-page workflows
+
+(L) Landing Page
+{County Name} Rescue System
+<button -> V1 with geotag data, V2 without geotag> I Need Help
+<button -> R1> I Can Help
+
+(V1) Geotag Start
+We can see your location in zip code
+{zip}
+
+More information will allow us
+to better assist you
+<button -> V3> Enter More Information
+<button -> V4> Submit My Location
+
+(V2) Address Start
+Please enter your location
+<input 'address'>Address
+<input 'zip'>Zip Code
+
+More information will allow us
+to better assist you
+<button -> V3> Enter More Information
+<button -> V4> Submit My Location
+
+(V3) More information
+Please tell us as much as you can
+All information is optional
+
+<input 'address'>Address
+<input 'zip'>Zip Code
+<input 'phone'>Phone
+<input 'first'>First Name
+<input 'last'>Last Name
+<input 'adults'>Number of Adults
+<input 'children'>Number of Children
+<input 'pets'>Number of Pets
+<input 'livestock'>Number of Large Animals / Livestock
+<checkbox 'danger'>I am in immediate danger
+<checkbox 'medical'>I have a medical emergency
+
+<button -> V4>Submit
+
+(V4) Victim Submit
+Thank you. We have your information.
+Help will be with you
+as soon as possible.
+
+Stay safe.
+Stay hydrated.
+Stay positive.
+
+(R1) Responder Start - if 'registered_phone' cookie is present, proceed to R3
+Thank you for helping
+
+Please enter the following information
+to get started
+<input 'phone'>Phone
+<input 'first'>First Name
+<input 'last'>Last Name
+<input 'group'>Group Name (optional)
+<select 'vehicle' [boat, airboat, truck, other]>Vehicle Type
+<checkbox 'medic'>I have medical training (EMT, CPR, etc.)
+
+<button -> R2> Submit
+
+(R2) Registration complete
+You are now registered
+
+<button -> R3> Find someone to help
+
+(R3) Find Victim
+
+**if active_record == null**
+<button -> R4>Find the victim nearest to me
+<button -> R5>Select from a map
+
+**if active_record != null**
+Were you able to help at
+{active_record.address} ?
+
+<button -> R6 active_record.rescued_time = Date.now, active_record = null, successful += 1>Yes, they are safe
+<button -> R7 active_record.recovery = true, active_record.checkout_time = Date.now, active_record = null>Please advise authorities
+<button -> R7 active_record.responder = null, active_record.checkout_time = Date.now, active_record = null>Could not locate
+<button -> R8 active_record.responder = null, active_record.checkout_time = null, active_record = null>Did not attempt
+
+(R4) Nearest Victim
+set active_record, active_record.responder = phone, active_record.checkout_time = Date.now
+Please return to this site
+after the rescue attempt
+
+(R5) Map Victim
+set active_record, active_record.responder = phone, active_record.checkout_time = Date.now
+Please return to this site
+after the rescue attempt
+
+(R6) Success
+Thank you for helping
+You have completed {successful} rescue(s)
+
+<button -> R3> Find someone to help
+
+(R7) Update
+Our records have been updated
+
+<button -> R3> Find someone to help
+
+(R8) No attempt
+Our records have been updated.
+Please remember that other responders
+will not be able to help victims that
+you have selected to assist.
+
+<button -> R3> Find someone to help
