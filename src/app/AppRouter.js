@@ -5,6 +5,7 @@ import {
   Help,
   Home,
   Login,
+  Signup,
   Respond,
   Privacy,
   Terms
@@ -18,6 +19,7 @@ const AppRouter = () => (
       <IndexRoute component={Home} />
       <Route path="contact" component={Contact} />
       <Route path="login" component={Login} />
+      <Route path="signup" component={Signup} />
       <Route path="help" component={Help} />
       <Route path="respond" component={Respond} />
       <Route path="privacy" component={Privacy} />
